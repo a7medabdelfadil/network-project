@@ -1,0 +1,149 @@
+.portfolio {
+  padding: 70px 20px;
+  color: #fff;
+}
+
+.portfolio__container {
+  max-width: 1250px;
+  margin: 0 auto;
+}
+
+.portfolio__head {
+  text-align: center;
+  margin-bottom: 36px;
+}
+
+.portfolio__title {
+  display: inline-flex;
+  align-items: center;
+  gap: 16px;
+  margin: 0 0 10px;
+  font-size: 44px;
+  font-weight: 900;
+}
+
+.portfolio__line {
+  width: 70px;
+  height: 2px;
+  background: rgba(255, 255, 255, 0.75);
+}
+
+.portfolio__sub {
+  margin: 0 auto;
+  max-width: 1100px;
+  color: rgba(255, 255, 255, 0.78);
+  font-weight: 600;
+  line-height: 1.7;
+  font-size: 14px;
+}
+
+.portfolio__grid {
+  margin-top: 26px;
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 26px;
+  align-items: start;
+}
+
+.filters__card {
+  background: #2a2a2a;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  box-shadow: 0 18px 50px rgba(0, 0, 0, 0.35);
+  border-radius: 14px;
+  padding: 18px;
+}
+
+.filters__btn {
+  width: 100%;
+  text-align: left;
+  background: transparent;
+  border: 0;
+  color: #fff;
+  margin-top: 8px;
+  font-weight: 800;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.filters__btn:hover {
+  background: rgba(255, 255, 255, 0.06);
+  border-left: 2px solid white;
+
+}
+
+.filters__btn.is-active {
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.12);
+  border-left: 2px solid white;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.work {
+  height: 300px;
+  border-radius: 14px;
+  overflow: hidden;
+  background: rgba(0, 0, 0, 0.18);
+  box-shadow: 0 18px 50px rgba(0, 0, 0, 0.35);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  display: block;
+  transition: 0.2s;
+}
+
+.work img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.work:hover {
+  transform: translateY(-2px);
+}
+
+@media (max-width: 1000px) {
+  .portfolio {
+    padding: 70px 120px;
+  }
+  .portfolio__grid {
+    grid-template-columns: 1fr;
+  }
+  .filters__card {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+  .filters__btn {
+    text-align: center;
+  }
+}
+
+@media (max-width: 700px) {
+  .gallery {
+    grid-template-columns: 1fr;
+  }
+  .work {
+    height: 240px;
+  }
+  .portfolio__title {
+    font-size: 34px;
+  }
+}
+
+.work {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.work.hide {
+  opacity: 0;
+  transform: translateY(20px);
+  pointer-events: none;
+}

@@ -1,0 +1,286 @@
+.sidebar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 22px;
+  z-index: 1200;
+}
+
+.sidebar-card {
+  width: 260px;
+  padding: 22px 18px;
+  border-radius: 22px;
+  background: #1b1b1b;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 18px 60px rgba(0, 0, 0, 0.55);
+  backdrop-filter: blur(10px);
+}
+
+.sidebar-card .menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 14px;
+}
+
+.sidebar-card .item {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 8px;
+  border-radius: 12px;
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.55);
+  transition: background 180ms ease, color 180ms ease, transform 180ms ease;
+}
+
+.sidebar-card .item:hover {
+  color: rgba(255, 255, 255, 0.92);
+  background: rgba(255, 255, 255, 0.06);
+  transform: translateX(2px);
+}
+
+.sidebar-card .item:active {
+  transform: translateX(1px);
+}
+
+.sidebar-card .item.active {
+  color: #fff;
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.sidebar-card .item .icon {
+  width: 26px;
+  height: 26px;
+  display: grid;
+  place-items: center;
+  opacity: 0.9;
+}
+
+.sidebar-card .item .icon svg {
+  width: 20px;
+  height: 20px;
+}
+
+.sidebar-card .dropdown .item {
+  position: relative;
+  padding-right: 52px;
+}
+
+.sidebar-card .chev {
+  position: absolute;
+  right: 6px;
+  width: 34px;
+  height: 34px;
+  border-radius: 999px;
+  display: grid;
+  place-items: center;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  color: rgba(255, 255, 255, 0.7);
+  transition: transform 180ms ease, background 180ms ease;
+}
+
+.sidebar-card .dropdown .item.is-open .chev,
+.sidebar-card .dropdown-inside .subitem.is-open-inside .chev {
+  transform: rotate(180deg);
+  background: rgba(255, 255, 255, 0.11);
+}
+
+.sidebar-card .chev svg {
+  width: 18px;
+  height: 18px;
+}
+
+.sidebar-card .submenu {
+  margin: -6px 0 0 36px;
+  padding: 10px 0 0;
+  list-style: none;
+  display: none;
+  gap: 8px;
+}
+
+.sidebar-card .submenu-inside {
+  margin: 4px 0 0 12px;
+  padding: 8px 0 0;
+  list-style: none;
+  display: none;
+  gap: 6px;
+}
+
+.dropdown.is-open .submenu {
+  display: grid;
+}
+
+.dropdown-inside.is-open-inside .submenu-inside {
+  display: grid;
+}
+
+.sidebar-card .subitem {
+  display: block;
+  padding: 8px 10px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.55);
+  background: #1b1b1b;
+  border: none;
+  transition: background 180ms ease, color 180ms ease;
+  cursor: pointer;
+}
+
+.sidebar-card .subitem:hover {
+  color: rgba(255, 255, 255, 0.9);
+  background: rgba(255, 255, 255, 0.07);
+}
+
+/* Nested dropdown styling */
+.sidebar-card .dropdown-inside .subitem {
+  position: relative;
+  padding-right: 42px;
+}
+
+.sidebar-card .dropdown-inside .chev {
+  width: 28px;
+  height: 28px;
+  right: -33px;
+  top: 2px;
+}
+
+.sidebar-card .subitem-deep {
+  display: block;
+  padding: 6px 10px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.5);
+  transition: background 180ms ease, color 180ms ease;
+}
+
+.sidebar-card .subitem-deep:hover {
+  color: rgba(255, 255, 255, 0.85);
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.sidebar-card .social {
+  margin-top: 18px;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.sidebar-card .social a {
+  width: 40px;
+  height: 40px;
+  border-radius: 999px;
+  display: grid;
+  place-items: center;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 22px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  color: rgba(255, 255, 255, 0.85);
+  transition: background 180ms ease, transform 180ms ease;
+}
+
+.sidebar-card .social a:hover {
+  background: rgba(255, 255, 255, 0.12);
+  transform: translateY(-1px);
+}
+
+.burger {
+  position: fixed;
+  top: 18px;
+  right: 18px;
+  z-index: 2000;
+  width: 52px;
+  height: 52px;
+  border-radius: 999px;
+  display: none;
+  place-items: center;
+  background: #fff;
+  border: 0;
+  box-shadow: 0 14px 40px rgba(0, 0, 0, 0.35);
+  cursor: pointer;
+}
+
+.burger__line {
+  position: absolute;
+  width: 22px;
+  height: 2px;
+  border-radius: 999px;
+  background: #121212;
+  transition: transform 220ms ease, opacity 180ms ease;
+}
+
+.burger__line:nth-child(1) {
+  transform: translateY(-6px);
+}
+.burger__line:nth-child(2) {
+  transform: translateY(0);
+}
+.burger__line:nth-child(3) {
+  transform: translateY(6px);
+}
+
+body.menu-open .burger__line:nth-child(1) {
+  transform: rotate(45deg);
+}
+body.menu-open .burger__line:nth-child(2) {
+  opacity: 0;
+}
+body.menu-open .burger__line:nth-child(3) {
+  transform: rotate(-45deg);
+}
+
+@media (max-width: 1200px) {
+  .burger {
+    display: grid;
+  }
+
+  .sidebar {
+    justify-content: center;
+    align-items: center;
+    transform: translateX(-115%);
+    transition: transform 250ms ease;
+    pointer-events: none;
+  }
+
+  .sidebar-card {
+    height: auto;
+    margin: 0;
+    max-height: calc(100vh - 44px);
+    overflow: auto;
+  }
+
+  body.menu-open .sidebar {
+    transform: translateX(0);
+    pointer-events: auto;
+  }
+}
+
+@media (max-width: 420px) {
+  .sidebar-card {
+    width: 240px;
+    padding: 18px 14px;
+    border-radius: 18px;
+  }
+
+  .burger {
+    top: 14px;
+    left: 14px;
+    width: 50px;
+    height: 50px;
+  }
+}

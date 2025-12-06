@@ -1,0 +1,343 @@
+.about{
+  display: flex;
+  min-height: 90vh;
+  padding: 60px;
+  gap: 60px;
+  justify-content: center;
+  align-items: center;
+}
+
+.about__left,
+.about__right{
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 900px){
+  .about{ flex-direction: column; padding: 30px; gap: 30px; }
+  .about__left, .about__right{ width: 100%; }
+}
+
+.profile-card {
+  width: 520px;
+  max-width: 95%;
+  background: #282828;
+  border-radius: 34px;
+  padding: 52px 44px 40px;
+  border-top: 4px solid #fff;
+  box-shadow: 0 28px 70px rgba(0,0,0,.65);
+}
+
+/* avatar */
+.profile-card__avatar-wrap{
+  width: 142px;
+  height: 142px;
+  margin: 0 auto 18px;
+  border-radius: 50%;
+  padding: 6px;
+  background: rgba(255,255,255,.65);
+  position: relative;
+}
+
+.profile-card__avatar{
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 6px solid rgba(25,25,25,.85);
+}
+
+/* badge */
+.profile-card__badge{
+  position: absolute;
+  right: 14px;
+  bottom: 18px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: rgba(255,255,255,.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-card__badge-dot{
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #0f0f0f;
+  box-shadow: inset 0 0 0 3px #ff8a00;
+}
+
+/* texts */
+.profile-card__name{
+  margin: 0;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 700;
+  color: #fff;
+}
+.profile-card__role{
+  margin: 10px 0 28px;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 600;
+  color: #d7d7d7;
+}
+
+/* fields */
+.profile-card__fields{
+  display: grid;
+  gap: 16px;
+}
+
+.profile-card__field{
+  height: 56px;
+  border-radius: 14px;
+  padding: 0 18px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+
+  background: rgba(0,0,0,.25);
+  border: 1px solid rgba(255,255,255,.10);
+  color: #fff;
+
+  transition: .2s;
+}
+
+.profile-card__field:hover{
+  background: rgba(255,255,255,.92);
+  color: #2b2b2b;
+  transform: translateY(-1px);
+}
+
+/* icons */
+.profile-card__icon{
+  width: 22px;
+  height: 22px;
+  min-width: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.profile-card__icon svg{
+  width: 22px;
+  height: 22px;
+  display: block;
+  color: currentColor; 
+}
+
+.profile-card__text{
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.profile-card a{
+  color: inherit;
+  text-decoration: none;
+}
+
+/* ===== ABOUT RIGHT CONTENT ===== */
+.about-info{
+  width: min(680px, 100%);
+  color: #fff;
+}
+
+/* pill */
+.about-pill{
+  display: inline-block;
+  background: #fff;
+  color: #111;
+  padding: 10px 18px;
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+/* title */
+.about-title{
+  margin: 18px 0 18px;
+  font-size: clamp(30px, 3.2vw, 52px);
+  line-height: 1.05;
+  letter-spacing: -0.5px;
+}
+
+/* paragraphs */
+.about-desc{
+  color: #cfcfcf;
+  line-height: 1.85;
+  margin: 0 0 14px;
+  max-width: 62ch;
+}
+
+/* stats card */
+.about-stats{
+  margin: 26px 0 26px;
+  padding: 26px 18px;
+  border-radius: 22px;
+  background: rgba(255,255,255,.05);
+  border: 1px solid rgba(255,255,255,.07);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  text-align: center;
+  gap: 10px;
+}
+
+.stat-num{
+  font-size: 34px;
+  font-weight: 800;
+}
+.stat-label{
+  margin-top: 8px;
+  font-size: 13px;
+  color: #bdbdbd;
+  font-weight: 600;
+}
+
+/* info grid */
+.about-grid{
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 22px 40px;
+  margin-bottom: 30px;
+}
+
+.info-k{
+  font-size: 13px;
+  color: #9a9a9a;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+.info-v{
+  font-size: 15px;
+  font-weight: 800;
+  color: #fff;
+}
+
+/* buttons */
+.about-actions{
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.btn{
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 20px;
+  border-radius: 14px;
+  font-weight: 800;
+  text-decoration: none;
+  transition: .2s;
+}
+
+.btn-ic{
+  font-size: 16px;
+  line-height: 1;
+}
+
+.btn-solid{
+  background: #fff;
+  color: #111;
+}
+
+.btn-solid:hover{
+  transform: translateY(-1px);
+  background: #f2f2f2;
+}
+
+.btn-outline{
+  background: transparent;
+  color: #fff;
+  border: 1px solid rgba(255,255,255,.35);
+}
+
+.btn-outline:hover{
+  transform: translateY(-1px);
+  background: rgba(255,255,255,.06);
+  border-color: rgba(255,255,255,.6);
+}
+
+/* fade in + move up */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Apply animation to left and right content */
+.about__left,
+.about__right {
+  opacity: 0;
+  animation: fadeInUp 1s ease forwards;
+}
+
+.about__right {
+  animation-delay: 0.3s;
+}
+
+.profile-card,
+.profile-card__avatar-wrap,
+.profile-card__name,
+.profile-card__role,
+.profile-card__fields .profile-card__field {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.8s ease forwards;
+}
+
+.profile-card {
+  animation-delay: 0.4s;
+}
+
+.profile-card__avatar-wrap {
+  animation-delay: 0.6s;
+}
+
+.profile-card__name {
+  animation-delay: 0.8s;
+}
+
+.profile-card__role {
+  animation-delay: 1s;
+}
+
+.profile-card__fields .profile-card__field:nth-child(1) { animation-delay: 1.2s; }
+.profile-card__fields .profile-card__field:nth-child(2) { animation-delay: 1.4s; }
+.profile-card__fields .profile-card__field:nth-child(3) { animation-delay: 1.6s; }
+
+.about-pill,
+.about-title,
+.about-desc,
+.about-stats,
+.about-grid,
+.about-actions {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.8s ease forwards;
+}
+
+.about-pill { animation-delay: 1.0s; }
+.about-title { animation-delay: 1.2s; }
+.about-desc:nth-child(1) { animation-delay: 1.4s; }
+.about-desc:nth-child(2) { animation-delay: 1.6s; }
+.about-stats { animation-delay: 1.8s; }
+.about-grid { animation-delay: 2s; }
+.about-actions .btn:nth-child(1) { animation-delay: 2.2s; }
+.about-actions .btn:nth-child(2) { animation-delay: 2.4s; }
+
+/* responsive tweaks */
+@media (max-width: 900px){
+  .about-info{ text-align: left; }
+  .about-stats{ grid-template-columns: 1fr; }
+  .about-grid{ grid-template-columns: 1fr; }
+}

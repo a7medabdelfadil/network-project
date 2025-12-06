@@ -1,0 +1,1469 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/global/main.css" />
+    <link rel="stylesheet" href="/css/components/sidebar.css" />
+    <link rel="stylesheet" href="/css/pages/home/hero.css" />
+    <link rel="stylesheet" href="/css/pages/home/about.css" />
+    <link rel="stylesheet" href="/css/pages/home/stats.css" />
+    <link rel="stylesheet" href="/css/pages/home/skills.css" />
+    <link rel="stylesheet" href="/css/pages/home/resume.css" />
+    <link rel="stylesheet" href="/css/pages/home/portfolio.css" />
+    <link rel="stylesheet" href="/css/pages/home/services.css" />
+    <link rel="stylesheet" href="/css/pages/home/testimonials.css" />
+    <link rel="stylesheet" href="/css/pages/home/contact.css" />
+    <link rel="stylesheet" href="/css/components/footer.css" />
+    <title>Network Project</title>
+  </head>
+  <body>
+    <button class="burger" id="burger">
+      <span class="burger__line"></span>
+      <span class="burger__line"></span>
+      <span class="burger__line"></span>
+    </button>
+
+    <div class="sidebar" id="sidebar">
+      <nav class="sidebar-card">
+        <ul class="menu">
+          <li>
+            <a class="item active" href="#home">
+              <span class="icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path
+                    d="M3 10.5 12 3l9 7.5V21a1 1 0 0 1-1 1h-5v-7H9v7H4a1 1 0 0 1-1-1z"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </span>
+              <span>Home</span>
+            </a>
+          </li>
+
+          <li>
+            <a class="item" href="#about">
+              <span class="icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path
+                    d="M12 12a4 4 0 1 0-4-4 4 4 0 0 0 4 4Z"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                  />
+                  <path
+                    d="M4 21a8 8 0 0 1 16 0"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                    stroke-linecap="round"
+                  />
+                </svg>
+              </span>
+              <span>About</span>
+            </a>
+          </li>
+
+          <li>
+            <a class="item" href="#resume">
+              <span class="icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path
+                    d="M7 3h7l3 3v15a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1Z"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                  />
+                  <path
+                    d="M14 3v4h4"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </span>
+              <span>Resume</span>
+            </a>
+          </li>
+
+          <li>
+            <a class="item" href="#portfolio">
+              <span class="icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path
+                    d="M4 5h16a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1Z"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                  />
+                  <path
+                    d="M8 11.5 6 14l3 4h10l-5-7-3 4Z"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M9 9a1 1 0 1 0 0 .01"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                  />
+                </svg>
+              </span>
+              <span>Portfolio</span>
+            </a>
+          </li>
+
+          <li>
+            <a class="item" href="#services">
+              <span class="icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path
+                    d="M6 6h12M6 12h12M6 18h12"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                    stroke-linecap="round"
+                  />
+                  <path
+                    d="M9 6v0M15 12v0M12 18v0"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="3.2"
+                    stroke-linecap="round"
+                  />
+                </svg>
+              </span>
+              <span>Services</span>
+            </a>
+          </li>
+
+          <li class="dropdown">
+            <button class="item" type="button">
+              <span class="icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path
+                    d="M12 3 3 7l9 4 9-4-9-4Z"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M3 12l9 4 9-4"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M3 17l9 4 9-4"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </span>
+              <span>Dropdown</span>
+              <span class="chev">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path
+                    d="M7 10l5 5 5-5"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </span>
+            </button>
+
+            <ul class="submenu">
+              <li><a class="subitem" href="#">Dropdown 1</a></li>
+
+              <li class="dropdown-inside">
+                <button class="subitem" type="button">
+                  Deep Dropdown
+                  <span class="chev">
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                      <path
+                        d="M7 10l5 5 5-5"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </span>
+                </button>
+
+                <ul class="submenu-inside">
+                  <li><a class="subitem-deep" href="#">Deep Dropdown 1</a></li>
+                  <li><a class="subitem-deep" href="#">Deep Dropdown 2</a></li>
+                  <li><a class="subitem-deep" href="#">Deep Dropdown 3</a></li>
+                  <li><a class="subitem-deep" href="#">Deep Dropdown 4</a></li>
+                  <li><a class="subitem-deep" href="#">Deep Dropdown 5</a></li>
+                </ul>
+              </li>
+
+              <li><a class="subitem" href="#">Dropdown 2</a></li>
+              <li><a class="subitem" href="#">Dropdown 3</a></li>
+              <li><a class="subitem" href="#">Dropdown 4</a></li>
+            </ul>
+          </li>
+
+          <li>
+            <a class="item" href="#contact">
+              <span class="icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path
+                    d="M4 6h16a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1Z"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                  />
+                  <path
+                    d="m4.5 7.5 7.5 6 7.5-6"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </span>
+              <span>Contact</span>
+            </a>
+          </li>
+        </ul>
+
+        <div class="social">
+          <a href="#" aria-label="X">X</a>
+          <a href="#" aria-label="Facebook">f</a>
+          <a href="#" aria-label="Instagram">◎</a>
+          <a href="#" aria-label="Skype">s</a>
+          <a href="#" aria-label="LinkedIn">in</a>
+        </div>
+      </nav>
+    </div>
+    <div class="outer">
+      <div class="content">
+        <section class="hero" id="home">
+          <div class="text">
+            <h1 class="logo">
+              SnapFolio
+              <span class="line"></span>
+            </h1>
+
+            <h2 class="name">Alexander Chen</h2>
+
+            <p class="role">
+              I'm a <span class="typing">Frontend Devloper</span>
+            </p>
+            <p class="desc">
+              Passionate about creating exceptional digital experiences that
+              blend innovative design with functional development. Let's bring
+              your vision to life.
+            </p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="#">View My Work</a>
+              <a class="btn btn-outline" href="#">Get In Touch</a>
+            </div>
+
+            <div class="hero-badges">
+              <!-- Dribbble -->
+              <a class="badge" href="#" aria-label="Dribbble">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path
+                    d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2Zm7.7 8.2a16.6 16.6 0 0 0-6.2-1.2c-.2-.5-.4-1-.6-1.5A16.7 16.7 0 0 1 18.8 6a7.97 7.97 0 0 1 .9 4.2Zm-2.3 7.1a12.7 12.7 0 0 0-4.7-1.1 24.4 24.4 0 0 1 2.1 5.7 7.9 7.9 0 0 0 2.6-4.6Zm-8.9 4.8a22.5 22.5 0 0 0-2.5-5.8 12.6 12.6 0 0 0-4 1.6 8 8 0 0 0 6.5 4.2Zm-7-6a14.4 14.4 0 0 1 3.5-1.4 16.3 16.3 0 0 0-1.6-2.3 7.95 7.95 0 0 0-2 3.7Zm2.6-6.8a14.6 14.6 0 0 0 2.6 3.4 14.5 14.5 0 0 1 4.3-.6c-.5-1.1-1-2.1-1.6-3.1a14.7 14.7 0 0 0-5.3.3Zm9.7 4.1h.2a14.8 14.8 0 0 1 5.6 1.1 8 8 0 0 1-3.2 6.1 26.2 26.2 0 0 0-2.4-6.2c-.1-.4-.2-.7-.2-1Z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </a>
+
+              <!-- Behance -->
+              <a class="badge" href="#" aria-label="Behance">
+                <span class="txt">Be</span>
+              </a>
+
+              <!-- GitHub -->
+              <a class="badge" href="#" aria-label="GitHub">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path
+                    d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.36-1.18-3.36-1.18-.45-1.15-1.1-1.46-1.1-1.46-.9-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.9 1.53 2.35 1.09 2.92.83.09-.65.35-1.09.63-1.34-2.22-.25-4.56-1.11-4.56-4.95 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.02A9.6 9.6 0 0 1 12 6.8c.85 0 1.71.12 2.5.35 1.9-1.29 2.74-1.02 2.74-1.02.56 1.37.21 2.39.1 2.64.64.7 1.03 1.59 1.03 2.68 0 3.85-2.34 4.7-4.57 4.95.36.31.68.92.68 1.86v2.75c0 .27.18.58.69.48A10 10 0 0 0 12 2Z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </a>
+
+              <!-- LinkedIn -->
+              <a class="badge" href="#" aria-label="LinkedIn">
+                <span class="txt">in</span>
+              </a>
+            </div>
+
+            <div class="circle1"></div>
+            <div class="circle2"></div>
+          </div>
+          <div class="photo">
+            <img src="/assets/images/hero.webp" alt="photo" />
+          </div>
+        </section>
+        <section class="about" id="about">
+          <div class="about__left">
+            <!-- CARD -->
+            <div class="profile-card">
+              <div class="profile-card__top-glow" aria-hidden="true"></div>
+
+              <div class="profile-card__avatar-wrap">
+                <img
+                  class="profile-card__avatar"
+                  src="/assets/images/markus.webp"
+                  alt="Marcus Thompson"
+                />
+                <span class="profile-card__badge" aria-hidden="true">
+                  <span class="profile-card__badge-dot"></span>
+                </span>
+              </div>
+
+              <h2 class="profile-card__name">Marcus Thompson</h2>
+              <p class="profile-card__role">
+                Creative Director &amp; Developer
+              </p>
+
+              <div class="profile-card__fields">
+                <div class="profile-card__field">
+                  <span class="profile-card__icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none">
+                      <path
+                        d="M4 6.5h16v11H4v-11Z"
+                        stroke="currentColor"
+                        stroke-width="1.7"
+                      />
+                      <path
+                        d="m5 7.5 7 6 7-6"
+                        stroke="currentColor"
+                        stroke-width="1.7"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </span>
+                  <span class="profile-card__text">marcus@example.com</span>
+                </div>
+
+                <div class="profile-card__field">
+                  <span class="profile-card__icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none">
+                      <path
+                        d="M8.7 3.5 6.9 5.3c-.6.6-.8 1.5-.4 2.3l1.3 2.6c.2.5.1 1-.3 1.4L6 12.9c1.8 3.8 5 7 8.8 8.8l1.3-1.5c.4-.4 1-.5 1.4-.3l2.6 1.3c.8.4 1.7.2 2.3-.4l1.8-1.8c.5-.5.7-1.3.4-2-1-2.2-2.8-4.4-5.1-6.1-.6-.4-1.4-.3-1.9.2l-.6.6c-1.6-.9-3-2.3-3.9-3.9l.6-.6c.6-.5.6-1.3.2-1.9C13.4 4.9 11.2 3.1 9 2.1c-.7-.3-1.5-.1-2 .4Z"
+                        stroke="currentColor"
+                        stroke-width="1.7"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </span>
+                  <span class="profile-card__text">+1 (555) 123-4567</span>
+                </div>
+
+                <div class="profile-card__field">
+                  <span class="profile-card__icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none">
+                      <path
+                        d="M12 21s7-5.2 7-11a7 7 0 1 0-14 0c0 5.8 7 11 7 11Z"
+                        stroke="currentColor"
+                        stroke-width="1.7"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M12 10.2a2.2 2.2 0 1 0 0-4.4 2.2 2.2 0 0 0 0 4.4Z"
+                        stroke="currentColor"
+                        stroke-width="1.7"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </span>
+                  <span class="profile-card__text">San Francisco, CA</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="about__right">
+            <div class="about-info">
+              <span class="about-pill">Get to Know Me</span>
+
+              <h2 class="about-title">
+                Passionate About Creating Digital<br />
+                Experiences
+              </h2>
+
+              <p class="about-desc">
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+                quae ab illo inventore veritatis et quasi architecto beatae
+                vitae dicta sunt explicabo.
+              </p>
+
+              <p class="about-desc">
+                Ut enim ad minima veniam, quis nostrum exercitationem ullam
+                corporis suscipit laboriosam, nisi ut aliquid ex ea commodi
+                consequatur.
+              </p>
+
+              <div class="about-stats">
+                <div class="stat">
+                  <div class="stat-num">150+</div>
+                  <div class="stat-label">Projects Completed</div>
+                </div>
+                <div class="stat">
+                  <div class="stat-num">5+</div>
+                  <div class="stat-label">Years Experience</div>
+                </div>
+                <div class="stat">
+                  <div class="stat-num">98%</div>
+                  <div class="stat-label">Client Satisfaction</div>
+                </div>
+              </div>
+
+              <div class="about-grid">
+                <div class="info">
+                  <div class="info-k">Specialization</div>
+                  <div class="info-v">UI/UX Design &amp; Development</div>
+                </div>
+
+                <div class="info">
+                  <div class="info-k">Experience Level</div>
+                  <div class="info-v">Senior Professional</div>
+                </div>
+
+                <div class="info">
+                  <div class="info-k">Education</div>
+                  <div class="info-v">Computer Science, MIT</div>
+                </div>
+
+                <div class="info">
+                  <div class="info-k">Languages</div>
+                  <div class="info-v">English, Spanish, French</div>
+                </div>
+              </div>
+
+              <div class="about-actions">
+                <a class="btn btn-solid" href="#">
+                  <span class="btn-ic">↓</span>
+                  Download Resume
+                </a>
+
+                <a class="btn btn-outline" href="#">
+                  <span class="btn-ic">💬</span>
+                  Let's Talk
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="stats">
+          <div class="stats__wrap">
+            <div class="stat-card">
+              <div class="stat-card__icon stat-card__icon--gray">
+                <!-- smile -->
+                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <path
+                    d="M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18Z"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                  />
+                  <path
+                    d="M8.5 10.2h0"
+                    stroke="currentColor"
+                    stroke-width="2.6"
+                    stroke-linecap="round"
+                  />
+                  <path
+                    d="M15.5 10.2h0"
+                    stroke="currentColor"
+                    stroke-width="2.6"
+                    stroke-linecap="round"
+                  />
+                  <path
+                    d="M8.7 14.2c1 .9 2.1 1.3 3.3 1.3s2.3-.4 3.3-1.3"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                    stroke-linecap="round"
+                  />
+                </svg>
+              </div>
+              <div class="stat-card__num">232</div>
+              <div class="stat-card__label">Happy Clients</div>
+            </div>
+
+            <div class="stat-card">
+              <div class="stat-card__icon stat-card__icon--orange">
+                <!-- doc -->
+                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <path
+                    d="M8 3.8h5.6L18.2 8v12.2a1.8 1.8 0 0 1-1.8 1.8H8a1.8 1.8 0 0 1-1.8-1.8V5.6A1.8 1.8 0 0 1 8 3.8Z"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M13.6 3.8V8h4.6"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M8.7 12h6.7M8.7 15.2h6.7M8.7 18.4h4.6"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                    stroke-linecap="round"
+                  />
+                </svg>
+              </div>
+              <div class="stat-card__num">521</div>
+              <div class="stat-card__label">Projects</div>
+            </div>
+
+            <div class="stat-card">
+              <div class="stat-card__icon stat-card__icon--green">
+                <!-- headset -->
+                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <path
+                    d="M4.8 12.2a7.2 7.2 0 0 1 14.4 0"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                    stroke-linecap="round"
+                  />
+                  <path
+                    d="M6 12.2v5a2 2 0 0 0 2 2h1v-7H6Z"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M18 12.2v5a2 2 0 0 1-2 2h-1v-7h3Z"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M10 20.2h4"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                    stroke-linecap="round"
+                  />
+                </svg>
+              </div>
+              <div class="stat-card__num">1463</div>
+              <div class="stat-card__label">Hours Of Support</div>
+            </div>
+
+            <div class="stat-card">
+              <div class="stat-card__icon stat-card__icon--pink">
+                <!-- users -->
+                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <path
+                    d="M9.2 11.2a3.2 3.2 0 1 0 0-6.4 3.2 3.2 0 0 0 0 6.4Z"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                  />
+                  <path
+                    d="M16.6 10.6a2.7 2.7 0 1 0 0-5.4 2.7 2.7 0 0 0 0 5.4Z"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                  />
+                  <path
+                    d="M4.6 19.4c.6-3 2.6-4.6 5.3-4.6s4.7 1.6 5.3 4.6"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                    stroke-linecap="round"
+                  />
+                  <path
+                    d="M14.7 15.8c1.9.2 3.3 1.4 3.8 3.6"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                    stroke-linecap="round"
+                  />
+                </svg>
+              </div>
+              <div class="stat-card__num">15</div>
+              <div class="stat-card__label">Hard Workers</div>
+            </div>
+          </div>
+        </section>
+        <section class="skills">
+          <div class="skills__container">
+            <header class="skills__head">
+              <h2 class="skills__title">
+                <span class="line"></span>
+                Skills
+                <span class="line"></span>
+              </h2>
+              <p class="skills__sub">
+                Necessitatibus eius consequatur ex aliquid fuga eum quidem sint
+                consectetur velit
+              </p>
+            </header>
+
+            <div class="skills__grid">
+              <!-- Left card -->
+              <div class="skill-card">
+                <h3 class="skill-card__title">Front-end Development</h3>
+                <span class="skill-card__bar"></span>
+
+                <div class="skill">
+                  <div class="skill__top">
+                    <span class="skill__name">HTML/CSS</span>
+                    <span class="skill__pct">95%</span>
+                  </div>
+                  <div class="progress">
+                    <span class="progress__fill" style="width: 95%"></span>
+                  </div>
+                </div>
+
+                <div class="skill">
+                  <div class="skill__top">
+                    <span class="skill__name">JavaScript</span>
+                    <span class="skill__pct">85%</span>
+                  </div>
+                  <div class="progress">
+                    <span class="progress__fill" style="width: 85%"></span>
+                  </div>
+                </div>
+
+                <div class="skill">
+                  <div class="skill__top">
+                    <span class="skill__name">React</span>
+                    <span class="skill__pct">80%</span>
+                  </div>
+                  <div class="progress">
+                    <span class="progress__fill" style="width: 80%"></span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Right card -->
+              <div class="skill-card">
+                <h3 class="skill-card__title">Back-end Development</h3>
+                <span class="skill-card__bar"></span>
+
+                <div class="skill">
+                  <div class="skill__top">
+                    <span class="skill__name">Node.js</span>
+                    <span class="skill__pct">75%</span>
+                  </div>
+                  <div class="progress">
+                    <span class="progress__fill" style="width: 75%"></span>
+                  </div>
+                </div>
+
+                <div class="skill">
+                  <div class="skill__top">
+                    <span class="skill__name">Python</span>
+                    <span class="skill__pct">70%</span>
+                  </div>
+                  <div class="progress">
+                    <span class="progress__fill" style="width: 70%"></span>
+                  </div>
+                </div>
+
+                <div class="skill">
+                  <div class="skill__top">
+                    <span class="skill__name">SQL</span>
+                    <span class="skill__pct">65%</span>
+                  </div>
+                  <div class="progress">
+                    <span class="progress__fill" style="width: 65%"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="resume" id="resume">
+          <div class="resume__container">
+            <!-- Header -->
+            <header class="resume__head">
+              <h2 class="resume__title">
+                <span class="resume__line"></span>
+                Resume
+                <span class="resume__line"></span>
+              </h2>
+              <p class="resume__sub">
+                Magnam dolores commodi suscipit. Necessitatibus eius consequatur
+                ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam
+                quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea.
+                Quia fugiat sit in iste officiis commodi quidem hic quas.
+              </p>
+            </header>
+
+            <div class="resume__grid">
+              <!-- LEFT -->
+              <aside class="resume-left">
+                <div class="resume-card">
+                  <div class="resume-card__img">
+                    <img
+                      src="/assets/images/resume-profile.webp"
+                      alt="Profile"
+                    />
+                  </div>
+
+                  <h3 class="resume-card__h">Professional Summary</h3>
+                  <p class="resume-card__p">
+                    Driven software architect with expertise in developing
+                    scalable, high-performance enterprise solutions. Passionate
+                    about leveraging cutting-edge technologies to solve complex
+                    business challenges.
+                  </p>
+
+                  <h3 class="resume-card__h">Contact Information</h3>
+
+                  <div class="contact">
+                    <div class="contact__row">
+                      <span class="contact__ic">📍</span>
+                      <span>742 Evergreen Terrace, Springfield, MA 02101</span>
+                    </div>
+                    <div class="contact__row">
+                      <span class="contact__ic">✉️</span>
+                      <span>contact@example.com</span>
+                    </div>
+                    <div class="contact__row">
+                      <span class="contact__ic">📱</span>
+                      <span>+1 (555) 123-4567</span>
+                    </div>
+                    <div class="contact__row">
+                      <span class="contact__ic">in</span>
+                      <span>linkedin.com/in/example</span>
+                    </div>
+                  </div>
+
+                  <h3 class="resume-card__h">Technical Skills</h3>
+
+                  <div class="tskill">
+                    <div class="tskill__top">
+                      <span>Web Development</span><span>95%</span>
+                    </div>
+                    <div class="tbar"><span style="width: 95%"></span></div>
+                  </div>
+
+                  <div class="tskill">
+                    <div class="tskill__top">
+                      <span>UI/UX Design</span><span>85%</span>
+                    </div>
+                    <div class="tbar"><span style="width: 85%"></span></div>
+                  </div>
+
+                  <div class="tskill">
+                    <div class="tskill__top">
+                      <span>Cloud Architecture</span><span>90%</span>
+                    </div>
+                    <div class="tbar"><span style="width: 90%"></span></div>
+                  </div>
+
+                  <div class="tskill">
+                    <div class="tskill__top">
+                      <span>Project Management</span><span>80%</span>
+                    </div>
+                    <div class="tbar"><span style="width: 80%"></span></div>
+                  </div>
+                </div>
+              </aside>
+
+              <!-- RIGHT -->
+              <div class="resume-right">
+                <!-- Professional Experience -->
+                <section class="rblock">
+                  <h3 class="rblock__title">
+                    <span class="rblock__ic">💼</span>
+                    Professional Experience
+                  </h3>
+
+                  <div class="timeline">
+                    <article class="item">
+                      <span class="dot"></span>
+                      <div class="item__content">
+                        <h4 class="item__h">Senior Software Architect</h4>
+                        <div class="item__meta">2022 - Present</div>
+                        <div class="item__meta2">🏢 Tech Innovations Inc.</div>
+
+                        <ul class="item__list">
+                          <li>
+                            Lead the architectural design and implementation of
+                            enterprise-scale applications
+                          </li>
+                          <li>
+                            Mentor team of 12 developers and establish technical
+                            best practices
+                          </li>
+                          <li>
+                            Drive adoption of microservices architecture and
+                            cloud-native solutions
+                          </li>
+                          <li>
+                            Reduce system downtime by 75% through improved
+                            architecture and monitoring
+                          </li>
+                        </ul>
+                      </div>
+                    </article>
+
+                    <article class="item">
+                      <span class="dot"></span>
+                      <div class="item__content">
+                        <h4 class="item__h">Lead Developer</h4>
+                        <div class="item__meta">2019 - 2022</div>
+                        <div class="item__meta2">
+                          🏢 Digital Solutions Corp.
+                        </div>
+
+                        <ul class="item__list">
+                          <li>
+                            Spearheaded development of company's flagship
+                            product reaching 1M+ users
+                          </li>
+                          <li>
+                            Implemented CI/CD pipeline reducing deployment time
+                            by 60%
+                          </li>
+                          <li>
+                            Managed team of 8 developers across multiple
+                            projects
+                          </li>
+                          <li>Increased code test coverage from 45% to 90%</li>
+                        </ul>
+                      </div>
+                    </article>
+                  </div>
+                </section>
+
+                <!-- Education -->
+                <section class="rblock">
+                  <h3 class="rblock__title">
+                    <span class="rblock__ic">🎓</span>
+                    Education
+                  </h3>
+
+                  <div class="timeline">
+                    <article class="item">
+                      <span class="dot"></span>
+                      <div class="item__content">
+                        <h4 class="item__h">
+                          Master of Science in Computer Science
+                        </h4>
+                        <div class="item__meta">2017 - 2019</div>
+                        <div class="item__meta2">🏫 Stanford University</div>
+                        <p class="item__p">
+                          Specialized in Artificial Intelligence and Machine
+                          Learning. Graduated with honors.
+                        </p>
+                      </div>
+                    </article>
+
+                    <article class="item">
+                      <span class="dot"></span>
+                      <div class="item__content">
+                        <h4 class="item__h">
+                          Bachelor of Science in Software Engineering
+                        </h4>
+                        <div class="item__meta">2013 - 2017</div>
+                        <div class="item__meta2">🏫 MIT</div>
+                        <p class="item__p">
+                          Deans List all semesters. Led university's coding
+                          club.
+                        </p>
+                      </div>
+                    </article>
+                  </div>
+                </section>
+
+                <!-- Certifications -->
+                <section class="rblock">
+                  <h3 class="rblock__title">
+                    <span class="rblock__ic">🏅</span>
+                    Certifications
+                  </h3>
+
+                  <div class="timeline timeline--short">
+                    <article class="item">
+                      <span class="dot"></span>
+                      <div class="item__content">
+                        <h4 class="item__h">
+                          AWS Certified Solutions Architect - Professional
+                        </h4>
+                        <div class="item__meta">2023</div>
+                      </div>
+                    </article>
+
+                    <article class="item">
+                      <span class="dot"></span>
+                      <div class="item__content">
+                        <h4 class="item__h">
+                          Google Cloud Professional Architect
+                        </h4>
+                        <div class="item__meta">2022</div>
+                      </div>
+                    </article>
+                  </div>
+                </section>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="portfolio" id="portfolio">
+          <div class="portfolio__container">
+            <header class="portfolio__head">
+              <h2 class="portfolio__title">
+                <span class="portfolio__line"></span>
+                Portfolio
+                <span class="portfolio__line"></span>
+              </h2>
+              <p class="portfolio__sub">
+                Magnam dolores commodi suscipit. Necessitatibus eius consequatur
+                ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam
+                quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea.
+                Quia fugiat sit in iste officiis commodi quidem hic quas.
+              </p>
+            </header>
+
+            <!-- Content -->
+            <div class="portfolio__grid">
+              <!-- Filters -->
+              <aside class="filters">
+                <div class="filters__card">
+                  <button class="filters__btn is-active">All Projects</button>
+                  <button class="filters__btn">Photography</button>
+                  <button class="filters__btn">Design</button>
+                  <button class="filters__btn">Automotive</button>
+                  <button class="filters__btn">Nature</button>
+                </div>
+              </aside>
+
+              <!-- Gallery -->
+              <div class="gallery">
+                <a
+                  class="work"
+                  href="/pages/portfolio-details.html"
+                  aria-label="Project 1"
+                  data-category="photography"
+                >
+                  <img src="/assets/images/project1.webp" alt="Cactus" />
+                </a>
+
+                <a
+                  class="work"
+                  href="/pages/portfolio-details.html"
+                  aria-label="Project 2"
+                  data-category="design"
+                >
+                  <img src="/assets/images/project2.webp" alt="Plant" />
+                </a>
+
+                <a
+                  class="work"
+                  href="/pages/portfolio-details.html"
+                  aria-label="Project 3"
+                  data-category="automotive"
+                >
+                  <img src="/assets/images/project3.webp" alt="Brush" />
+                </a>
+
+                <a
+                  class="work"
+                  href="/pages/portfolio-details.html"
+                  aria-label="Project 4"
+                  data-category="nature"
+                >
+                  <img src="/assets/images/project4.webp" alt="Chair" />
+                </a>
+
+                <a
+                  class="work"
+                  href="/pages/portfolio-details.html"
+                  aria-label="Project 5"
+                  data-category="photography"
+                >
+                  <img src="/assets/images/project5.webp" alt="Chair" />
+                </a>
+
+                <a
+                  class="work"
+                  href="/pages/portfolio-details.html"
+                  aria-label="Project 6"
+                  data-category="design"
+                >
+                  <img src="/assets/images/project6.webp" alt="Chair" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="services" id="services">
+          <div class="services__container">
+            <!-- top centered title -->
+            <header class="services__head">
+              <h2 class="services__title">
+                <span class="services__line"></span>
+                Services
+                <span class="services__line"></span>
+              </h2>
+              <p class="services__sub">
+                Necessitatibus eius consequatur ex aliquid fuga eum quidem sint
+                consectetur velit
+              </p>
+            </header>
+
+            <!-- intro row -->
+            <div class="services__intro">
+              <h3 class="services__big">
+                Innovative business<br />
+                performance solutions
+              </h3>
+
+              <div class="services__side">
+                <p class="services__text">
+                  We integrate forward-thinking strategies, creative approaches,
+                  and state-of-the-art technologies to deliver exceptional
+                  customer experiences that drive growth and engage target
+                  markets.
+                </p>
+
+                <a class="services__btn" href="#">
+                  View All Services <span class="services__arrow">→</span>
+                </a>
+              </div>
+            </div>
+
+            <!-- cards -->
+            <div class="services__grid">
+              <a href="/pages/service-details.html" class="service-card">
+                <div class="service-card__icon" aria-hidden="true">
+                  <!-- palette -->
+                  <svg viewBox="0 0 24 24" fill="none">
+                    <path
+                      d="M12 21a9 9 0 1 1 0-18c5 0 9 3.6 9 7.5S17.6 14 14.8 14H13c-.6 0-1 .4-1 1 0 .5.2.8.5 1.2.5.6.8 1.2.8 2 0 1.7-1.4 2.8-3.3 2.8Z"
+                      stroke="currentColor"
+                      stroke-width="1.8"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M8.2 10.3h0"
+                      stroke="currentColor"
+                      stroke-width="3"
+                      stroke-linecap="round"
+                    />
+                    <path
+                      d="M12 8.3h0"
+                      stroke="currentColor"
+                      stroke-width="3"
+                      stroke-linecap="round"
+                    />
+                    <path
+                      d="M15.8 10.3h0"
+                      stroke="currentColor"
+                      stroke-width="3"
+                      stroke-linecap="round"
+                    />
+                  </svg>
+                </div>
+                <h4 class="service-card__title">Creative<br />branding</h4>
+                <p class="service-card__desc">
+                  Nulla facilisi. Maecenas eget magna neque. Suspendisse
+                  potenti.
+                </p>
+              </a>
+
+              <a href="/pages/service-details.html" class="service-card">
+                <div class="service-card__icon" aria-hidden="true">
+                  <!-- diamond -->
+                  <svg viewBox="0 0 24 24" fill="none">
+                    <path
+                      d="M12 3 4.5 9l7.5 12L19.5 9 12 3Z"
+                      stroke="currentColor"
+                      stroke-width="1.8"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M4.5 9h15"
+                      stroke="currentColor"
+                      stroke-width="1.8"
+                      stroke-linecap="round"
+                    />
+                    <path
+                      d="M9.2 9 12 21 14.8 9"
+                      stroke="currentColor"
+                      stroke-width="1.8"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </div>
+                <h4 class="service-card__title">Design<br />systems</h4>
+                <p class="service-card__desc">
+                  Praesent euismod varius tellus, vel bibendum nunc interdum at.
+                </p>
+              </a>
+
+              <a href="/pages/service-details.html" class="service-card">
+                <div class="service-card__icon" aria-hidden="true">
+                  <!-- megaphone -->
+                  <svg viewBox="0 0 24 24" fill="none">
+                    <path
+                      d="M3 11v2a2 2 0 0 0 2 2h1l2 5h2l-1.5-5H21V7H10L5 9a2 2 0 0 0-2 2Z"
+                      stroke="currentColor"
+                      stroke-width="1.8"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M21 7v10"
+                      stroke="currentColor"
+                      stroke-width="1.8"
+                    />
+                  </svg>
+                </div>
+                <h4 class="service-card__title">Marketing<br />strategies</h4>
+                <p class="service-card__desc">
+                  Vivamus tempor velit id magna dictum.
+                </p>
+              </a>
+
+              <a href="/pages/service-details.html" class="service-card">
+                <div class="service-card__icon" aria-hidden="true">
+                  <!-- code -->
+                  <svg viewBox="0 0 24 24" fill="none">
+                    <path
+                      d="M9 18 3 12l6-6"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M15 6 21 12l-6 6"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M11 20 13 4"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                    />
+                  </svg>
+                </div>
+                <h4 class="service-card__title">Digital<br />platforms</h4>
+                <p class="service-card__desc">
+                  Cras fermentum odio eu feugiat malesuada.
+                </p>
+              </a>
+
+              <a href="/pages/service-details.html" class="service-card">
+                <div class="service-card__icon" aria-hidden="true">
+                  <!-- chart -->
+                  <svg viewBox="0 0 24 24" fill="none">
+                    <path
+                      d="M4 19V5"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                    />
+                    <path
+                      d="M4 19h16"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                    />
+                    <path
+                      d="M7 15l3-4 3 2 4-6"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </div>
+                <h4 class="service-card__title">Growth<br />acceleration</h4>
+                <p class="service-card__desc">
+                  Aenean vel augue vel nisi bibendum posuere.
+                </p>
+              </a>
+
+              <a href="/pages/service-details.html" class="service-card">
+                <div class="service-card__icon" aria-hidden="true">
+                  <!-- video -->
+                  <svg viewBox="0 0 24 24" fill="none">
+                    <path
+                      d="M4 7.5A2.5 2.5 0 0 1 6.5 5h8A2.5 2.5 0 0 1 17 7.5v9A2.5 2.5 0 0 1 14.5 19h-8A2.5 2.5 0 0 1 4 16.5v-9Z"
+                      stroke="currentColor"
+                      stroke-width="1.8"
+                    />
+                    <path
+                      d="M17 10l3-2v8l-3-2v-4Z"
+                      stroke="currentColor"
+                      stroke-width="1.8"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </div>
+                <h4 class="service-card__title">Media<br />solutions</h4>
+                <p class="service-card__desc">
+                  Etiam efficitur lacus in diam finibus.
+                </p>
+              </a>
+            </div>
+          </div>
+        </section>
+        <section class="testimonials">
+          <div class="testimonials__container">
+            <header class="testimonials__head">
+              <h2 class="testimonials__title">
+                <span class="testimonials__line"></span>
+                Testimonials
+                <span class="testimonials__line"></span>
+              </h2>
+              <p class="testimonials__sub">
+                Necessitatibus eius consequatur ex aliquid fuga eum quidem sint
+                consectetur velit
+              </p>
+            </header>
+
+            <div class="testimonials__grid">
+              <!-- 1 -->
+              <article class="tcard">
+                <span class="tcard__quote">“</span>
+                <p class="tcard__text">
+                  Implementing innovative strategies has revolutionized our
+                  approach to market challenges and competitive positioning.
+                </p>
+                <div class="tcard__sep"></div>
+                <div class="tcard__person">
+                  <img
+                    class="tcard__avatar"
+                    src="/assets/images/markus.webp"
+                    alt="Rachel Bennett"
+                  />
+                  <div>
+                    <div class="tcard__name">Rachel Bennett</div>
+                    <div class="tcard__role">Strategy Director</div>
+                  </div>
+                </div>
+              </article>
+
+              <!-- 2 -->
+              <article class="tcard">
+                <span class="tcard__quote">“</span>
+                <p class="tcard__text">
+                  Exceptional service delivery and innovative solutions have
+                  transformed our business operations, leading to remarkable
+                  growth and enhanced customer satisfaction across all
+                  touchpoints.
+                </p>
+                <div class="tcard__sep"></div>
+                <div class="tcard__person">
+                  <img
+                    class="tcard__avatar"
+                    src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=200&auto=format&fit=crop"
+                    alt="Daniel Morgan"
+                  />
+                  <div>
+                    <div class="tcard__name">Daniel Morgan</div>
+                    <div class="tcard__role">Chief Innovation Officer</div>
+                  </div>
+                </div>
+              </article>
+
+              <!-- 3 -->
+              <article class="tcard">
+                <span class="tcard__quote">“</span>
+                <p class="tcard__text">
+                  Strategic partnership has enabled seamless digital
+                  transformation and operational excellence.
+                </p>
+                <div class="tcard__sep"></div>
+                <div class="tcard__person">
+                  <img
+                    class="tcard__avatar"
+                    src="/assets/images/markus.webp"
+                    alt="Emma Thompson"
+                  />
+                  <div>
+                    <div class="tcard__name">Emma Thompson</div>
+                    <div class="tcard__role">Digital Lead</div>
+                  </div>
+                </div>
+              </article>
+
+              <!-- 4 -->
+              <article class="tcard">
+                <span class="tcard__quote">“</span>
+                <p class="tcard__text">
+                  Professional expertise and dedication have significantly
+                  improved our project delivery timelines and quality metrics.
+                </p>
+                <div class="tcard__sep"></div>
+                <div class="tcard__person">
+                  <img
+                    class="tcard__avatar"
+                    src="/assets/images/markus.webp"
+                    alt="Christopher Lee"
+                  />
+                  <div>
+                    <div class="tcard__name">Christopher Lee</div>
+                    <div class="tcard__role">Technical Director</div>
+                  </div>
+                </div>
+              </article>
+
+              <!-- 5 -->
+              <article class="tcard">
+                <span class="tcard__quote">“</span>
+                <p class="tcard__text">
+                  Collaborative approach and industry expertise have
+                  revolutionized our product development cycle, resulting in
+                  faster time-to-market and increased customer engagement
+                  levels.
+                </p>
+                <div class="tcard__sep"></div>
+                <div class="tcard__person">
+                  <img
+                    class="tcard__avatar"
+                    src="https://images.unsplash.com/photo-1544723795-3fb6469f5b39?q=80&w=200&auto=format&fit=crop"
+                    alt="Olivia Carter"
+                  />
+                  <div>
+                    <div class="tcard__name">Olivia Carter</div>
+                    <div class="tcard__role">Product Manager</div>
+                  </div>
+                </div>
+              </article>
+
+              <!-- 6 -->
+              <article class="tcard">
+                <span class="tcard__quote">“</span>
+                <p class="tcard__text">
+                  Innovative approach to user experience design has
+                  significantly enhanced our platform's engagement metrics and
+                  customer retention rates.
+                </p>
+                <div class="tcard__sep"></div>
+                <div class="tcard__person">
+                  <img
+                    class="tcard__avatar"
+                    src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=200&auto=format&fit=crop"
+                    alt="Nathan Brooks"
+                  />
+                  <div>
+                    <div class="tcard__name">Nathan Brooks</div>
+                    <div class="tcard__role">UX Director</div>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+        <section class="contact" id="contact">
+          <div class="contact__container">
+            <header class="contact__head">
+              <h2 class="contact__title">
+                <span class="contact__line"></span>
+                Contact
+                <span class="contact__line"></span>
+              </h2>
+              <p class="contact__sub">
+                Necessitatibus eius consequatur ex aliquid fuga eum quidem sint
+                consectetur velit
+              </p>
+            </header>
+
+            <div class="contact__grid">
+              <!-- LEFT CARD -->
+              <div class="cinfo">
+                <h3 class="cinfo__h">Contact Info</h3>
+                <p class="cinfo__p">
+                  Praesent sapien massa, convallis a pellentesque nec, egestas
+                  non nisi. Vestibulum ante ipsum primis.
+                </p>
+
+                <div class="citem">
+                  <div class="citem__ic">📍</div>
+                  <div>
+                    <div class="citem__t">Our Location</div>
+                    <div class="citem__v">A108 Adam Street</div>
+                    <div class="citem__v">New York, NY 535022</div>
+                  </div>
+                </div>
+
+                <div class="citem">
+                  <div class="citem__ic">📞</div>
+                  <div>
+                    <div class="citem__t">Phone Number</div>
+                    <div class="citem__v">+1 5589 55488 55</div>
+                    <div class="citem__v">+1 6678 254445 41</div>
+                  </div>
+                </div>
+
+                <div class="citem">
+                  <div class="citem__ic">✉️</div>
+                  <div>
+                    <div class="citem__t">Email Address</div>
+                    <div class="citem__v">info@example.com</div>
+                    <div class="citem__v">contact@example.com</div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- RIGHT CARD -->
+              <div class="cform">
+                <h3 class="cform__h">Get In Touch</h3>
+                <p class="cform__p">
+                  Praesent sapien massa, convallis a pellentesque nec, egestas
+                  non nisi. Vestibulum ante ipsum primis.
+                </p>
+
+                <form class="form">
+                  <div class="form__row">
+                    <input class="inp" type="text" placeholder="Your Name" />
+                    <input class="inp" type="email" placeholder="Your Email" />
+                  </div>
+
+                  <input class="inp" type="text" placeholder="Subject" />
+
+                  <textarea
+                    class="inp inp--area"
+                    placeholder="Message"
+                  ></textarea>
+
+                  <button class="btn-send" type="button">Send Message</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
+        <footer class="site-footer">
+          <div class="site-footer__container">
+            <p class="site-footer__copy">
+              © Copyright <b>iPortfolio</b> All Rights Reserved
+            </p>
+            <p class="site-footer__credit">
+              Designed by <a href="#">BootstrapMade</a>
+            </p>
+          </div>
+        </footer>
+      </div>
+    </div>
+    <script src="/js/sidebar.js"></script>
+    <script src="/js/filter.js"></script>
+  </body>
+</html>
