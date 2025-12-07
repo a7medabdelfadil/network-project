@@ -1,4 +1,3 @@
-/* ===== TESTIMONIALS SECTION ===== */
 .testimonials {
   padding: 70px 18px;
   background: #2e2e2e;
@@ -10,7 +9,6 @@
   margin: 0 auto;
 }
 
-/* header */
 .testimonials__head {
   text-align: center;
   margin-bottom: 38px;
@@ -39,14 +37,12 @@
   font-size: 14px;
 }
 
-/* grid (3x2) */
 .testimonials__grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 24px;
 }
 
-/* card */
 .tcard {
   position: relative;
   border-radius: 14px;
@@ -73,7 +69,6 @@
   color: rgba(255, 255, 255, 0.85);
 }
 
-/* text */
 .tcard__text {
   margin: 16px 0 18px;
   color: rgba(255, 255, 255, 0.82);
@@ -82,14 +77,12 @@
   font-size: 13px;
 }
 
-/* separator */
 .tcard__sep {
   height: 1px;
   background: rgba(255, 255, 255, 0.16);
   margin: 0 0 16px;
 }
 
-/* person row */
 .tcard__person {
   display: flex;
   align-items: center;

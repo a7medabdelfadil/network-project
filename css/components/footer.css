@@ -38,7 +38,7 @@
   opacity: 0;
   transform: translateY(30px);
   animation: fadeInUpFooter 0.8s ease forwards;
-  animation-delay: 1.6s; 
+  animation-delay: 1s;
 }
 
 @keyframes fadeInUpFooter {

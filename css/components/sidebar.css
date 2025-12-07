@@ -110,7 +110,7 @@
   gap: 8px;
 }
 
-.sidebar-card .submenu-inside {
+.dropdown-inside .submenu-inside {
   margin: 4px 0 0 12px;
   padding: 8px 0 0;
   list-style: none;
@@ -267,7 +267,7 @@ body.menu-open .burger__line:nth-child(3) {
   body.menu-open .sidebar {
     transform: translateX(0);
     pointer-events: auto;
-  }
+}
 }
 
 @media (max-width: 420px) {

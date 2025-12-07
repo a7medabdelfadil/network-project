@@ -42,7 +42,6 @@
   background-color: #232323;
 }
 
-/* grid */
 .sdetails__grid {
   margin-top: 26px;
   display: grid;
@@ -255,7 +254,7 @@
   }
 }
 
-/* fade in + move up for service details */
+/* animations */
 .sdetails__page,
 .sdetails__h,
 .sdetails__p,
