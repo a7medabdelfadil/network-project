@@ -255,7 +255,7 @@ body.menu-open .burger__line:nth-child(3) {
     transform: translateX(-115%);
     transition: transform 250ms ease;
     pointer-events: none;
-  }
+}
 
   .sidebar-card {
     height: auto;

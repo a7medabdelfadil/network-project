@@ -15,18 +15,6 @@
   align-items: center;
 }
 
-@media (max-width: 900px) {
-  .about {
-    flex-direction: column;
-    padding: 30px;
-    gap: 30px;
-  }
-  .about__left,
-  .about__right {
-    width: 100%;
-  }
-}
-
 .profile-card {
   width: 520px;
   max-width: 95%;
@@ -86,6 +74,7 @@
   font-weight: 700;
   color: #fff;
 }
+
 .profile-card__role {
   margin: 10px 0 28px;
   text-align: center;
@@ -107,18 +96,15 @@
   display: flex;
   align-items: center;
   gap: 14px;
-
   background: rgba(0, 0, 0, 0.25);
   border: 1px solid rgba(255, 255, 255, 0.1);
   color: #fff;
-
   transition: 0.2s;
 }
 
 .profile-card__field:hover {
   background: rgba(255, 255, 255, 0.92);
   color: #2b2b2b;
-  transform: translateY(-1px);
 }
 
 /* icons */
@@ -130,11 +116,11 @@
   align-items: center;
   justify-content: center;
 }
+
 .profile-card__icon svg {
   width: 22px;
   height: 22px;
   display: block;
-  color: currentColor;
 }
 
 .profile-card__text {
@@ -143,11 +129,9 @@
 }
 
 .profile-card a {
-  color: inherit;
   text-decoration: none;
 }
 
-/* ===== ABOUT RIGHT CONTENT ===== */
 .about-info {
   width: min(680px, 100%);
   color: #fff;
@@ -167,17 +151,13 @@
 /* title */
 .about-title {
   margin: 18px 0 18px;
-  font-size: clamp(30px, 3.2vw, 52px);
-  line-height: 1.05;
-  letter-spacing: -0.5px;
+  font-size: 30px;
 }
 
 /* paragraphs */
 .about-desc {
   color: #cfcfcf;
-  line-height: 1.85;
   margin: 0 0 14px;
-  max-width: 62ch;
 }
 
 /* stats card */
@@ -253,7 +233,6 @@
 }
 
 .btn-solid:hover {
-  transform: translateY(-1px);
   background: #f2f2f2;
 }
 
@@ -264,7 +243,6 @@
 }
 
 .btn-outline:hover {
-  transform: translateY(-1px);
   background: rgba(255, 255, 255, 0.06);
   border-color: rgba(255, 255, 255, 0.6);
 }
@@ -374,5 +352,14 @@
   }
   .about-grid {
     grid-template-columns: 1fr;
+  }
+  .about {
+    flex-direction: column;
+    padding: 30px;
+    gap: 30px;
+  }
+  .about__left,
+  .about__right {
+    width: 100%;
   }
 }
